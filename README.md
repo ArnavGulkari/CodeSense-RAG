@@ -1,5 +1,5 @@
 # GraphRAG + AutoGen + Ollama + Chainlit UI = Local Multi-Agent RAG Superbot  
-![Graphical Abstract](https://github.com/ArnavGulkari/autogen_graphRAG/blob/main/images/1721017707759.jpg?raw=true)
+![Graphical Abstract](https://github.com/ArnavGulkari/CodeSense-RAG/blob/main/images/1721017707759.jpg?raw=true)
 This application integrates GraphRAG with AutoGen agents, powered by local LLMs from Ollama, for free and offline embedding and inference. Key highlights include:
  - **Agentic-RAG:** - Integrating GraphRAG's knowledge search method with an AutoGen agent via function calling.
  - **Offline LLM Support:** - Configuring GraphRAG (local & global search) to support local models from Ollama for inference
@@ -7,8 +7,8 @@ This application integrates GraphRAG with AutoGen agents, powered by local LLMs 
  - **Non-OpenAI Function Calling:** - Extending AutoGen to support function calling with non-OpenAI LLMs from Ollama via Lite-LLM proxy
 server.
  - **Interactive UI:** - Deploying Chainlit UI to handle continuous conversations, multi-threading, and user input settings.
-![Main Interfacce](https://github.com/ArnavGulkari/autogen_graphRAG/blob/main/images/UI1.webp?raw=true)
-![Widget Settings](https://github.com/ArnavGulkari/autogen_graphRAG/blob/main/images/U2.webp?raw=true)
+![Main Interface](https://github.com/ArnavGulkari/CodeSense-RAG/blob/main/images/UI1.webp?raw=true)
+![Widget Settings](https://github.com/ArnavGulkari/CodeSense-RAG/blob/main/images/U2.webp?raw=true)
 ## 📦 Installation and Setup Linux
 Follow these steps to set up and run AutoGen GraphRAG Local with Ollama and Chainlit UI:
 1. **Install LLMs:**
@@ -23,8 +23,8 @@ Follow these steps to set up and run AutoGen GraphRAG Local with Ollama and Chai
     ```bash
    conda create -n RAG_agents python=3.12
    conda activate RAG_agents
-   git clone https://github.com/ArnavGulkari/autogen_graphRAG.git
-   cd autogen_graphRAG
+   git clone https://github.com/ArnavGulkari/CodeSense-RAG.git
+   cd CodeSense-RAG
    pip install -r requirements.txt
     ```    
 3. **Initiate GraphRAG root folder:**
@@ -62,8 +62,8 @@ Follow these steps to set up and run AutoGen GraphRAG Local with Ollama and Chai
     ```
 2. **Create conda environment and install packages:**
     ```pwsh
-    git clone https://github.com/ArnavGulkari/autogen_graphRAG.git
-    cd autogen_graphRAG
+    git clone https://github.com/ArnavGulkari/CodeSense-RAG.git
+    cd CodeSense-RAG
     python -m venv venv
     ./venv/Scripts/activate
     pip install -r requirements.txt
@@ -89,5 +89,9 @@ Follow these steps to set up and run AutoGen GraphRAG Local with Ollama and Chai
     ```    
 7. **Run app:**
     ```pwsh
+    chainlit run appUI.py
+    ```                
+
+
     chainlit run appUI.py
     ```                
